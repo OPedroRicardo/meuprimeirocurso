@@ -1,0 +1,93 @@
+:root {
+    --fundo: #080E0F;
+    --texto: #CDEEF3;
+    --principal: #63DAEF;
+}
+
+html {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.085em;
+    padding: 21px 42px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    gap: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.selecionado {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+}
+
+textarea {
+    background: var(--fundo);
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    height: 65vh;
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid var(--principal);
+    border-radius: 8px;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grupo-botoes {
+    display: flex;
+    algin-items: center;
+    gap: 14px;
+    padding-top: 32px;
+}
+
+.grupo-botoes button {
+    border: 1px solid var(--principal);
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: var(--principal);
+    font-weight: medium;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.5);
+}
