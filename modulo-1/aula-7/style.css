@@ -1,0 +1,148 @@
+:root {
+    --fundo: #080E0F;
+    --texto: #CDEEF3;
+    --principal: #63DAEF;
+}
+
+html {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.085em;
+    padding: 21px 42px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    gap: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 24px;
+    font-weight: medium;
+}
+
+a:hover {
+    filter: brightness(1.5);
+}
+
+.selecionado {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+}
+
+textarea {
+    background: var(--fundo);
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    height: 65vh;
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid var(--principal);
+    border-radius: 8px;
+    color: var(--texto);
+}
+
+.acoes {
+    padding-top: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grupo-botoes {
+    display: flex;
+    algin-items: center;
+    gap: 14px;
+}
+
+.grupo-botoes button {
+    border: 1px solid var(--principal);
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--principal);
+    font-weight: medium;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.5);
+}
+
+i {
+    font-size: 28px;
+}
+
+.cartao-sobre {
+    max-width: 1167px;
+    height: 504px;
+    width: 90%;
+    background: #FFFFFF10;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    backdrop-filter: blur(12px);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.cartao-sobre p {
+    max-width: 467px;
+}
+
+.circulo-1 {
+    width: 260px;
+    height: 260px;
+    background: linear-gradient(45deg, #C93C0F 0%, rgba(201, 60, 15, 0) 100%);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.circulo-2 {
+    width: 324px;
+    height: 324px;
+    background: linear-gradient(45deg, #C90FC1 0%, rgba(201, 60, 15, 0) 100%);
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+}
