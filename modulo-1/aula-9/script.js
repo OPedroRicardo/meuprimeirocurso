@@ -1,4 +1,4 @@
-// Condicionais
+// Condicionais e variáveis
 
 var comparacao = 1 < 0;
 var outraComparacao = 0 < 1;
